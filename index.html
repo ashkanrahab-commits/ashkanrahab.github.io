@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اشکان رهاب | برنامه‌نویس و دانش‌آموز ریاضی-فیزیک</title>
+
+  <meta name="description" content="صفحه شخصی اشکان رهاب — دانش‌آموز ریاضی-فیزیک، برنامه‌نویس و نوازنده ویولن">
+  <meta property="og:title" content="اشکان رهاب">
+  <meta property="og:description" content="دانش‌آموز ریاضی-فیزیک، برنامه‌نویس و نوازنده ویولن">
+  <meta property="og:image" content="profile.jpg">
+  <meta property="og:type" content="profile">
+  <link rel="icon" href="profile.jpg" type="image/jpeg">
+
+  <style>
+    :root {
+      --bg1: #0b1120;
+      --bg2: #1e293b;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --accent: #10b981;
+      --accent-dark: #059669;
+      --line: #e2e8f0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+      min-height: 100vh;
+      padding: 32px 16px;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 680px;
+      background: var(--card);
+      border-radius: 24px;
+      padding: 40px 32px;
+      box-shadow: 0 24px 70px rgba(0,0,0,0.4);
+      animation: fadeUp .7s ease;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .header {
+      text-align: center;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      border: 4px solid var(--accent);
+      margin-bottom: 18px;
+      background: #e2e8f0;
+    }
+
+    h1 { font-size: 1.9rem; margin-bottom: 6px; }
+
+    .title {
+      color: var(--accent-dark);
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    section { margin-top: 30px; }
+
+    h2 {
+      font-size: 1.15rem;
+      margin-bottom: 14px;
+      color: var(--accent-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p.bio {
+      color: #334155;
+      line-height: 2.1;
+      font-size: .98rem;
+      text-align: justify;
+    }
+
+    ul.list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    ul.list li {
+      background: #f8fafc;
+      border-right: 4px solid var(--accent);
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: .94rem;
+      line-height: 1.9;
+      color: #334155;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tags span {
+      background: #ecfdf5;
+      color: var(--accent-dark);
+      border: 1px solid #a7f3d0;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: .85rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 34px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+
+    .links a {
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--line);
+      padding: 9px 20px;
+      border-radius: 999px;
+      font-size: .9rem;
+      transition: .2s;
+    }
+
+    .links a:hover {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 28px 18px; border-radius: 18px; }
+      .avatar { width: 120px; height: 120px; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+
+    <!-- ===== هدر ===== -->
+    <header class="header">
+      <!-- عکس رو با اسم profile.jpg کنار فایل بذار -->
+      <img src="profile.jpg" alt="اشکان رهاب" class="avatar">
+      <h1>اشکان رهاب</h1>
+      <p class="title">دانش‌آموز ریاضی-فیزیک • برنامه‌نویس • نوازنده ویولن</p>
+    </header>
+
+    <!-- ===== درباره من ===== -->
+    <section>
+      <h2>درباره من</h2>
+      <p class="bio">
+        من اشکان رهاب هستم، دانش‌آموز رشته ریاضی-فیزیک. از بچگی
+        کنجکاوی‌ام به ریاضی و ساختن چیزهای جدید باعث شد کم‌کم به
+        برنامه‌نویسی، طراحی و موسیقی کشیده بشم. الان همزمان با درس
+        خوندن، روی پروژه‌های نرم‌افزاری کار می‌کنم، ویولن می‌زنم و
+        یک تیم ده‌نفره در حوزه برنامه‌نویسی دارم.
+      </p>
+    </section>
+
+    <!-- ===== تحصیل ===== -->
+    <section>
+      <h2>تحصیل و افتخارات</h2>
+      <ul class="list">
+        <li>پنج سال تحصیل در مدارس دبستان نمونه دولتی</li>
+        <li>چهار سال متداول جزو شاگردان اول، با معدل بالای ۱۹/۹</li>
+        <li>رتبه یک کشوری در مسابقات ریاضی «متر» (سال گذشته)</li>
+        <li>جزو سه نفر برتر جشنواره خوارزمی در عرصه «احساس واژه»</li>
+        <li>رشته تحصیلی: ریاضی-فیزیک</li>
+      </ul>
+    </section>
+
+    <!-- ===== موسیقی ===== -->
+    <section>
+      <h2>موسیقی</h2>
+      <p class="bio" style="margin-bottom:12px;">
+        ساز اختصاصی‌ام ویولن است، ولی از اکثر سازها یکی دو قطعه
+        بلدم و باهاشون کار کردم:
+      </p>
+      <div class="tags">
+        <span>ویولن (تخصصی)</span>
+        <span>هنگ درام</span>
+        <span>کاخن</span>
+        <span>پیانو</span>
+        <span>کالیمبا</span>
+      </div>
+    </section>
+
+    <!-- ===== مهارت‌ها ===== -->
+    <section>
+      <h2>مهارت‌ها</h2>
+      <div class="tags">
+        <span>5D Planner</span>
+        <span>Floor Planner</span>
+        <span>3ds Max (مقدماتی)</span>
+        <span>AutoCAD (مقدماتی)</span>
+        <span>حسابداری (۴ سال)</span>
+        <span>برنامه‌نویسی</span>
+        <span>مدیریت تیم</span>
+      </div>
+    </section>
+
+    <!-- ===== برنامه‌ها ===== -->
+    <section>
+      <h2>برنامه‌های ساخته‌شده</h2>
+      <ul class="list">
+        <li>A.R Calculator — ماشین حساب مهندسی</li>
+        <li>قسطینو — اپلیکیشن مدیریت اقساط</li>
+      </ul>
+      <p class="bio" style="margin-top:10px;font-size:.85rem;color:#64748b;">
+        هر دو در مایکت منتشر شده‌اند.
+      </p>
+    </section>
+
+    <!-- ===== ورزش ===== -->
+    <section>
+      <h2>ورزش</h2>
+      <ul class="list">
+        <li>سه سال مداوم عضو تیم هندبال ناحیه — پست گوشه چپ</li>
+      </ul>
+    </section>
+
+    <!-- ===== تماس ===== -->
+    <nav class="links">
+      <a href="mailto:ashkanrahab@gmail.com">ایمیل</a>
+      <a href="https://t.me/As_rh" target="_blank" rel="noopener">تلگرام</a>
+      <a href="https://myket.ir/app/com.rahab.final" target="_blank" rel="noopener">مایکت</a>
+    </nav>
+
+  </main>
+
+</body>
+        </html>
